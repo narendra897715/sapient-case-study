@@ -1,0 +1,53 @@
+[  { "columns" : [{"columnName": "name", "type" : "string"}, 
+    {"columnName": "class", "type" : "number"},
+    {"columnName": "section", "type" : "string"},
+    {"columnName": "sub1", "type" : "number"},
+    {"columnName": "sub2", "type" : "number"},
+    {"columnName": "sub3", "type" : "number"}],
+  "data" : [  {  
+      "id": 1,  
+      "name": "Jack",  
+      "class": 3,  
+      "section": "D",
+      "sub1": 23,
+      "sub2": 54,
+      "sub3": 65 
+    },  
+    {  
+      "id": 2,  
+      "name": "will",
+      "class": 4,  
+      "section": "E",
+      "sub1": 23,
+      "sub2": 45,
+      "sub3": 67  
+    },  
+    {  
+      "id": 3,  
+      "name": "Mary",  
+      "class": 3,  
+      "section": "F",
+      "sub1": 26,
+      "sub2": 35,
+      "sub3": 45  
+    },  
+    {  
+      "id": 4,  
+      "name": "Smith",  
+      "class": 5,  
+      "section": "A",
+      "sub1": 34,
+      "sub2": 35,
+      "sub3": 71  
+    },  
+    {  
+      "id": 5,  
+      "name": "John",  
+      "class": 6,  
+      "section": "B",
+      "sub1": 40,
+      "sub2": 38,
+      "sub3": 87  
+    }  ]
+} 
+  ]  

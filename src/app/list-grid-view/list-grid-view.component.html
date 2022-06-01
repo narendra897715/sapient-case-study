@@ -1,0 +1,12 @@
+<div>
+<button (click)="listView()">list</button>
+<button (click)="gridViewClicked()">grid</button>
+</div>
+
+
+<div class="grid-container" [ngClass]="gridView ? 'gridView' : 'listView'">
+    <div *ngFor="let item of productsData" class="grid-item" >
+  
+    {{item}}
+</div>
+  </div>

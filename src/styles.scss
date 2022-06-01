@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@mixin section {
+    padding: 30px;
+    width: 300px;
+}
+.count-down, .actions {
+    border: 1px solid black;
+    @include section();
+}
+
+.events {
+   @include section();
+}
+
+.counts {
+    display: flex;
+    @include section();
+}
+.pause, .actions-component{
+    margin-left: 10px;
+}
+
+.flex-container {
+    display: flex;
+}
+

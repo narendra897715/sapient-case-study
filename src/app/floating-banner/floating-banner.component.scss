@@ -1,0 +1,53 @@
+.float {
+    position: relative;
+    animation-name: example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    
+  }
+  
+  @keyframes example {
+    0%   { left:0px;}
+    25%  { left:25%;}
+    50%  { left:50%;}
+    75%  { left:75%;}
+    100% { left:95%;}
+  }
+
+  #scroll-text {
+    text-align: right;
+  
+    /* animation properties */
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(-100%); }
+    to { -moz-transform: translateX(100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(-100%); }
+    to { -webkit-transform: translateX(100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+    to {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+  }

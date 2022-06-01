@@ -1,0 +1,7 @@
+<p>dynamic-divs works!</p>
+
+<div *ngFor="let item of dynamicDivsArray">
+<div class="dynamic-div">
+    <button (click)="buttonClicked($event)">Button {{item}}</button>
+</div>
+</div>

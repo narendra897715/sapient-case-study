@@ -1,0 +1,12 @@
+<div class="timer">
+
+<div class="flex-container">
+    <app-counter [timer]="limitReceived"></app-counter>
+    <app-actions class="actions-component" (startOrPauseEvent)="buttonClicked($event)"></app-actions>
+</div>
+
+<div class="flex-container">
+    <app-eventlogs [timer]="limitReceived"></app-eventlogs> 
+    <app-clickscounts [timer]="limitReceived"></app-clickscounts>
+</div>
+</div>
