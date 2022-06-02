@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {TimerSubject} from '../timer-subject.service';
+import {ITimerActions} from '../timer-subject.interface';
+export interface Imessage {
+  message : string
+}
 @Component({
   selector: 'app-events-subject',
   templateUrl: './events-subject.component.html',
@@ -7,11 +11,11 @@ import {TimerSubject} from '../timer-subject.service';
 })
 export class EventsSubjectComponent implements OnInit {
 
-  logsArray : any[] = [];
+  logsArray : Imessage[] = [];
   constructor(private timerSubject: TimerSubject) { }
 
-  ngOnInit(): void {
-    this.timerSubject.getTimer().subscribe((item: any) => {
+  ngOnInit() {
+    this.timerSubject.getTimer().subscribe((item : any) => {
       let currentdateandtime = new Date().toLocaleString();
     if(item.action == 'pause') {
       this.logsArray.push({message: `paused at ${currentdateandtime}`})

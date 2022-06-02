@@ -1,18 +1,12 @@
-.float {
-    position: relative;
-    animation-name: example;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    
+.container {
+    border: 1px solid black;
+    width: 460;
+     height: 60px;
+     padding:10px;
+     box-sizing: border-box;
+     overflow: hidden;
   }
   
-  @keyframes example {
-    0%   { left:0px;}
-    25%  { left:25%;}
-    50%  { left:50%;}
-    75%  { left:75%;}
-    100% { left:95%;}
-  }
 
   #scroll-text {
     text-align: right;
@@ -22,9 +16,9 @@
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
     
-    -moz-animation: my-animation 15s linear infinite;
-    -webkit-animation: my-animation 15s linear infinite;
-    animation: my-animation 15s linear infinite;
+    -moz-animation: my-animation 7s linear infinite;
+    -webkit-animation: my-animation 7s linear infinite;
+    animation: my-animation 7s linear infinite;
   }
   
   /* for Firefox */

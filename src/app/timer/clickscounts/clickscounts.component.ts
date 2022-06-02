@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
-
+import {ITimerActions} from '../timer.interface';
 @Component({
   selector: 'app-clickscounts',
   templateUrl: './clickscounts.component.html',
@@ -13,7 +13,7 @@ export class ClickscountsComponent implements OnInit {
   ngOnInit(): void {
   }
  
-  @Input() timer : any;
+  @Input() timer : ITimerActions;
 
   ngOnChanges(changes : SimpleChanges) {
     if(changes['timer'].currentValue.action == 'pause') {

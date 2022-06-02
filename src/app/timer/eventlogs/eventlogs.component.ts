@@ -1,18 +1,21 @@
 import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
-
+import {ITimerActions} from '../timer.interface';
+export interface Imessage {
+  message : string
+}
 @Component({
   selector: 'app-eventlogs',
   templateUrl: './eventlogs.component.html',
   styleUrls: ['./eventlogs.component.scss']
 })
 export class EventlogsComponent implements OnInit {
-  logsArray : any[] = [];
+  logsArray : Imessage[] = [];
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  @Input() timer : any;
+  @Input() timer : ITimerActions;
 
   ngOnChanges(changes : SimpleChanges) {
     let currentdateandtime = new Date().toLocaleString(),

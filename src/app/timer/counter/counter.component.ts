@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, SimpleChange, SimpleChanges } from '@angular/core';
-
+import {ITimerActions} from '../timer.interface';
 
 @Component({
   selector: 'app-counter',
@@ -8,9 +8,9 @@ import { Component, OnInit, Input, SimpleChange, SimpleChanges } from '@angular/
 })
 export class CounterComponent implements OnInit {
   interval : any;
-  newLimit :any = 0;
+  newLimit : number = 0;
   initialstart : boolean = true;
-  @Input() timer : any;
+  @Input() timer : ITimerActions;
 
   ngOnChanges(changes : SimpleChanges) {
     if(changes['timer'].currentValue.action == 'pause' ) {

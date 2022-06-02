@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import studentData from './student.json';
-import {Istudents} from './students.interface';
+import {Istudents, IcolumnNames} from './students.interface';
 @Component({
   selector: 'app-student-table',
   templateUrl: './student-table.component.html',
@@ -17,7 +17,7 @@ export class StudentTableComponent implements OnInit {
   
   students : any[] = studentData[0].data;
   originalStudentsData = JSON.parse(JSON.stringify(this.students));
-    columns : any = studentData[0].columns;
+    columns : IcolumnNames[] = studentData[0].columns;
 
   sort(colDetails: any) {
     let colname = colDetails.columnName;
